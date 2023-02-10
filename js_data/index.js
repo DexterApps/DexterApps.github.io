@@ -4,7 +4,7 @@ var nameApp = 'Dexter Play-er';
 	
 	var link_telegram = 'https://t.me/DexterPlayer';
 	var link_facebook = '';
-	var link_app = ''
+	var link_app = 'https://play.google.com/store/apps/details?id=com.pdexter.player.one'
 	
 	var main_name = nameApp + '『』';
 	var main_text_connector = 'poderoso';
