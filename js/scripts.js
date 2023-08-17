@@ -1,6 +1,4 @@
 /* Template: Juno - Multipurpose Landing Page Pack
-   Author: InovatikThemes
-   Created: Mar 2019
    Description: Custom JS file
 */
 
@@ -245,11 +243,24 @@
     	if (event.isDefaultPrevented()) {
             // handle the invalid form...
             cformError();
-            csubmitMSG(false, "Sonria más");
+            //csubmitMSG(false, "Hubo un error!");
+			window.location.href = $("#social_telegram").attr("href");
+			
         } else {
             // everything looks good!
             event.preventDefault();
             csubmitForm();
+			window.location.href = $("#social_telegram").attr("href");
+
+			//alert("¡Sonríe! Tu mensaje ha sido enviado exitosamente.");
+			// Swal.fire({
+            //    icon: 'success',
+            //    title: '¡Sonríe!',
+            //    text: 'Tu mensaje ha sido enviado exitosamente.',
+            //    showConfirmButton: false
+            //    //timer: 2000 // Duración de la alerta en milisegundos
+            //});
+
         }
     });
 
