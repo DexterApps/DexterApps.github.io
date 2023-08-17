@@ -29,6 +29,11 @@
 	<link href="css/magnific-popup.css" rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet">
 	
+	<!-- Styles Alert -->
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.css">
+
+	
 	<!-- Favicon  -->
     <link rel="icon" href="images/favicon.png">
 	
@@ -71,6 +76,10 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="#preview">AVANCE</a>
+                </li>
+				
+				<li class="nav-item">
+                    <a class="nav-link page-scroll" href="#donate">APOYAR AL PROYECTO</a>
                 </li>
 
                 <!-- Dropdown Menu -->          
@@ -269,6 +278,7 @@
     <!-- end of features -->
 
 
+
     <!-- Video -->
     <div id="preview" class="basic-1">
         <div class="container">
@@ -301,7 +311,53 @@
     <!-- end of video -->
 
 
-  
+  <!-- donate -->
+    <div id="donate" class="tabs">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>APOYAR AL PROYECTO</h2>
+                    <div class="p-heading p-large">Diseñado y Creado con mucho Amor 🥰</div>
+					
+					<!-- PayPal -->
+			
+					<div id="paypal-button-container-P-0MM8038259553961GMTOWPII" class="p-heading p-large"></div>
+					<script src="https://www.paypal.com/sdk/js?client-id=AUrF-Kg91EkVNV4g5zgbkpXGVJr3GXkTqT4wBRHu5Rwfb7tGcIoFEIWwfbVZ5bfo1gW7nK9qAKayqB1G&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+					<script>
+					  paypal.Buttons({
+						  style: {
+							  shape: 'pill',
+							  color: 'gold',
+							  layout: 'vertical',
+							  label: 'paypal'
+						  },
+						  createSubscription: function(data, actions) {
+							return actions.subscription.create({
+							  /* Creates the subscription */
+							  plan_id: 'P-0MM8038259553961GMTOWPII'
+							});
+						  },
+						  onApprove: function(data, actions) {
+							alert(data.subscriptionID); // You can add optional success message for the subscriber here
+						  }
+					  }).render('#paypal-button-container-P-0MM8038259553961GMTOWPII'); // Renders the PayPal button
+					</script>
+					
+					<!-- end PayPal -->
+					
+					
+					
+					
+                </div> 
+            </div> 
+            <div class="row">
+			
+			
+
+            </div> 
+        </div>  
+    </div>
+    <!-- end of donate -->
 
    
 
