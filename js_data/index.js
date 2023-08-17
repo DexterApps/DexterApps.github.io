@@ -1,4 +1,5 @@
-var nameApp = 'Dexter Play-er';
+	var nameApp = 'Dexter Play-er';
+
 	var description = nameApp;
 	var author = nameApp;
 	
@@ -36,6 +37,11 @@ var nameApp = 'Dexter Play-er';
 		document.getElementById('copyright_company_name').textContent = copyright_company_name;
 
 	}
-		
+
+	function changeColorDonate(){
+		var donateDiv = document.getElementById("donate");
+		donateDiv.style.backgroundColor = "black";
+	}	
 	changeHead();
 	changeBody();
+	changeColorDonate();
